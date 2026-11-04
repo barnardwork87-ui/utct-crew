@@ -8,7 +8,7 @@ then open http://localhost:4317 (add `?loader` to replay the intro).
 
 ## Crew illustrations
 Drop PNGs (transparent background, portrait ~4:5) into `assets/crew/` named:
-`josh.png  davey.png  mikey-l.png  mikey-p.png  mikey-h.png  cass.png  matty.png  saxon.png`
+`ally.png  josh.png  davey.png  mikey-l.png  mikey-p.png  mikey-h.png  cass.png  matty.png  saxon.png`
 They replace the initials placeholders automatically.
 
 ## Data

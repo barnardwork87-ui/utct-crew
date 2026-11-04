@@ -69,7 +69,10 @@
         jobs: ['Gets the one-on-one at Hout Bay and Newlands', 'Gives him one small goal per leg, never the full distance', 'Spots the bonk before Barney does'] },
       { slug: 'saxon', name: 'Saxon', role: 'UTCT 55k podium · He talks, we listen', bg: '#FFFFFF', auth: 100,
         bio: 'Podium at the 55k. Humbled Barney on a 25 km run in Newlands in August (it’s on Strava). When Saxon speaks, the crew goes quiet, including the Heads of Vibes.',
-        jobs: ['Final word on any race-craft call', 'Tells him what the next section is actually like', 'Allowed to say “walk this”. Nobody else is.'] }
+        jobs: ['Final word on any race-craft call', 'Tells him what the next section is actually like', 'Allowed to say “walk this”. Nobody else is.'] },
+      { slug: 'ally', name: 'Ally', role: 'Head of Beers (post-finish only)', bg: '#E9B44C', auth: 55,
+        bio: 'An actual brewer, so the only crew member with a professional qualification relevant to this event. His department opens at the finish line and not one metre earlier, no matter how nicely Barney asks at Newlands.',
+        jobs: ['Brings the beer. Brewed it, probably.', 'Keeps it cold for anywhere between 19 and 26 hours', 'Hands Barney the first one at the finish, and not before'] }
     ];
     $('#crewGrid').innerHTML = CREW.map((c, i) => `
       <article class="crewcard" data-reveal data-delay="${(i % 4) * 0.08}">
@@ -249,9 +252,9 @@
         say: ['Eleven kilometres. You’ve done this run a hundred times.', 'Dead Man’s Tree is a landmark, not a prediction.', 'We’ll see you at the finish. Go.'],
         dont: ['“Only 11 km!” (it’ll take him 2½ hours)', 'Anything with the word “nearly”'] },
       'Finish': { mood: 'Lying on the grass, saying “never again”. He’ll have signed up again by Tuesday.',
-        hand: ['Warm clothes, a beanie and a blanket', 'Recovery shake or chocolate milk', 'Slides for his feet', 'A chair. Finally.', 'A cold beer, if he can hold it'],
+        hand: ['Warm clothes, a beanie and a blanket', 'Recovery shake or chocolate milk', 'Slides for his feet', 'A chair. Finally.', 'A cold beer from Ally, brewed by Ally, if he can hold it'],
         take: ['Everything else. He can’t carry anything.'],
-        say: ['You did it.', 'Saxon: say something wise.'],
+        say: ['You did it.', 'Saxon: say something wise.', 'Ally: “Bar’s open.”'],
         dont: ['“So, what’s next?”', 'Anything about his finish time until he’s eaten'] }
     };
     const order = sc.filter(r => r.s.crew);
