@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Barney’s UTCT 100 · Crew HQ</title>
+<meta name="description" content="Crew briefing for Barney’s RMB UTCT 100, 21 November 2026.">
+<link rel="icon" href="assets/barney.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css?v=6">
+</head>
+<body data-page="home">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__pin">
+    <svg class="topo hero__map" id="heroTopo"></svg>
+    <div class="hero__vline" style="left:66.6%"></div>
+    <span class="plus" style="left:calc(66.6% - 6px);top:58%"></span>
+    <span class="hero__km" id="heroKm">km 0</span>
+    <div class="hero__side" data-hero-side>
+      <span class="eyebrow">Crew briefing · RMB UTCT 100</span>
+      He’s been injured three times in eighteen months and decided the fix is 100 kilometres with five thousand metres of climbing. This site is everything you need to keep him alive, fed and moving. Read it now. He won’t be able to explain any of it at km 70.
+    </div>
+    <h1 class="hero__title h-xxl" data-hero-title>
+      <span class="line-mask"><span>A grown man</span></span>
+      <span class="line-mask"><span>will run 100 km</span></span>
+      <span class="line-mask"><span>around Cape Town.</span></span>
+      <span class="line-mask"><span style="color:var(--orange)">On purpose.</span></span>
+    </h1>
+    <div class="hero__meta" data-hero-meta>
+      <div>Start<b>Sat 04:00</b></div>
+      <div>Distance<b>99.2 km</b></div>
+      <div>Climbing<b>4,972 m</b></div>
+      <div>Goal<b>19 hrs</b></div>
+    </div>
+    <div class="hero__scroll">SCROLL ↓ TO START RUNNING</div>
+  </div>
+</section>
+
+<!-- ============ STATEMENT ============ -->
+<section class="banner">
+  <div class="vgrid"><i style="left:16.6%"></i><i style="left:50%"></i><i style="left:83.3%"></i></div>
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>The situation</p>
+    <h2 class="h-l mt-m" id="statement">Nine aid stations. Six where you’re allowed to help. Eight crew members, three of them called Mikey. One man who will tell you he’s fine.</h2>
+    <div class="banner__photos" data-reveal>
+      <img src="assets/img/p002.jpg" alt="UTCT start in the dark">
+      <img src="assets/img/p036.jpg" alt="Runner in the mist on Table Mountain">
+      <img src="assets/img/p074.jpg" alt="Runners on the beach">
+      <img src="assets/img/p061.jpg" alt="Runner with head in hands">
+      <img src="assets/img/p007.jpg" alt="Runner lying on the finish line">
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats dark u-section" id="stats">
+  <div class="vgrid"><i style="left:33.3%"></i><i style="left:66.6%"></i></div>
+  <div class="wrap">
+    <div class="stats__grid">
+      <div class="stats__intro">
+        <p class="eyebrow">01 · The training</p>
+        <h2 class="h-m">Strava doesn’t lie. Barney does, a little.</h2>
+        <p class="lede">Every run since he restarted on 2 June, after the doctor told him to stop. Pulled straight from Strava on <span id="snap">4 Nov</span>.</p>
+      </div>
+      <ul class="stats__list" id="statsList"></ul>
+    </div>
+    <div class="chart" data-reveal>
+      <div class="chart__head">
+        <div><p class="eyebrow">Weekly volume · June → November</p><p class="h-s mt-s">From 11 km weeks to a 76 km peak, plus a week in September he won’t explain.</p></div>
+        <div class="legend"><span><i></i>km / week</span><span><i class="o"></i>vert / week</span></div>
+      </div>
+      <svg id="weekChart" viewBox="0 0 1000 300"></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REPORT CARD ============ -->
+<section class="report" id="report">
+  <div class="report__pin">
+    <svg class="topo faint" id="reportTopo"></svg>
+    <span class="plus" style="left:12%;top:30%"></span><span class="plus" style="right:12%;top:30%"></span>
+    <span class="plus" style="left:12%;bottom:12%"></span><span class="plus" style="right:12%;bottom:12%"></span>
+    <div class="report__head">
+      <p class="eyebrow">02 · Chance of success</p>
+      <h2 class="h-xl">We graded him. It went badly.</h2>
+    </div>
+    <div class="report__deck" id="deck">
+      <div class="card card--olive"><div class="card__icon">VRT</div><div><div class="card__grade">B+</div><h4>Vert</h4><p>28,966 m since June. Honestly decent. Do not tell him this, it’ll go straight to his head and then his knee.</p></div></div>
+      <div class="card card--sky"><div class="card__icon">LNG</div><div><div class="card__grade">C</div><h4>Long runs</h4><p>One 60, one 41, a few 25–30s. Mathematically that adds up to 100. Emotionally it does not.</p></div></div>
+      <div class="card card--blue"><div class="card__icon">TIS</div><div><div class="card__grade">D</div><h4>Tissue integrity</h4><p>Knee in ’25, ankle in March, doctor-ordered rest in April. The body has filed three complaints and been ignored three times.</p></div></div>
+      <div class="card card--paper"><div class="card__icon">CON</div><div><div class="card__grade">C−</div><h4>Consistency</h4><p>Built from 11 km weeks in July to 76 km in October. Then took a full week off in September for reasons that remain classified.</p></div></div>
+      <div class="card card--navy"><div class="card__icon">NGT</div><div><div class="card__grade">B</div><h4>Night running</h4><p>Most weeknight runs go up the mountain after dark. Either it’s dedication or he hates the sun. Useful from Newlands onwards.</p></div></div>
+      <div class="card card--lime"><div class="card__icon">FUL</div><div><div class="card__grade">?</div><h4>Fuelling</h4><p>Never tested over 19 hours. He sweats like a cold drink on a hot day. Mikey L is the variable.</p></div></div>
+    </div>
+    <div class="report__final" id="stamp">
+      <div class="stamp">OVERALL: D+<small>Will finish · Will cry at Constantia Glen</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROUTE ============ -->
+<section class="route" id="route">
+  <div class="wrap">
+    <div class="route__head">
+      <div>
+        <p class="eyebrow" data-reveal>03 · The route</p>
+        <h2 class="h-xl mt-s" data-lines><span class="line-mask"><span>99.2 km of</span></span><span class="line-mask"><span>bad decisions.</span></span></h2>
+      </div>
+      <p class="lede" data-reveal>These contour lines are the real mountain, every 20 m, built from elevation data, with the official 2026 GPX on top. Hover over a section to see what he’s going through. Orange dots are stations where you’re allowed to help. Grey dots aren’t, and helping there costs him 30 minutes.</p>
+    </div>
+  </div>
+  <div class="route__stage">
+    <div class="route__mapbox">
+      <svg class="route__map" id="routeMap"></svg>
+      <div class="maplegend"><span><i class="r"></i>Route</span><span><i class="o"></i>Crew allowed</span><span><i class="g"></i>No crew</span></div>
+    </div>
+    <div class="route__panel">
+      <div class="leginfo" id="legInfo"></div>
+      <div class="profile">
+        <p class="eyebrow" style="margin-bottom:8px">Elevation · hover to scrub</p>
+        <svg id="profile" viewBox="0 0 1000 150" preserveAspectRatio="none"></svg>
+        <div class="profile__axis"><span>0 km</span><span>25</span><span>50</span><span>75</span><span>99.2 km</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee__in">
+  <span>Platteklip at 08:11</span><span>Hout Bay costume change</span><span>Two heads of vibes</span><span>Nobody ask about Stevie</span><span>No crew on the mountain</span><span>Headlamp leaves Hout Bay with him</span>
+  <span>Platteklip at 08:11</span><span>Hout Bay costume change</span><span>Two heads of vibes</span><span>Nobody ask about Stevie</span><span>No crew on the mountain</span><span>Headlamp leaves Hout Bay with him</span>
+</div></div>
+
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="cta__bg" data-parallax style="background-image:url(assets/img/p081.jpg)"></div>
+  <div class="wrap">
+    <p class="eyebrow" style="color:rgba(255,255,255,.7)">04 · Your homework</p>
+    <h2 class="h-xl" data-lines><span class="line-mask"><span>Crew. Read the rest.</span></span><span class="line-mask"><span>Then read it again.</span></span></h2>
+    <div class="cta__links">
+      <a class="btn btn--o" href="crew.html">Who does what <span class="arr">→</span></a>
+      <a class="btn btn--ghost" href="schedule.html">When to be where <span class="arr">→</span></a>
+      <a class="btn btn--ghost" href="aid-stations.html">What to hand him <span class="arr">→</span></a>
+      <a class="btn btn--ghost" href="fuel.html">Fuelling <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot" id="foot"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="assets/terrain.js"></script>
+<script src="assets/stats.js"></script>
+<script src="assets/js/model.js?v=6"></script>
+<script src="assets/js/site.js?v=6"></script>
+<script src="assets/js/footer.js?v=6"></script>
+<script src="assets/js/home.js?v=6"></script>
+</body>
+</html>

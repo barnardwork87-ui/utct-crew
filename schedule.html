@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timing & Schedule · Barney’s UTCT 100</title>
+<link rel="icon" href="assets/barney.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css?v=6">
+</head>
+<body data-page="schedule">
+
+<section class="phero">
+  <svg class="topo" data-topo="470,300,300,260" data-draw></svg>
+  <div class="vgrid"><i style="left:33.3%"></i><i style="left:66.6%"></i></div>
+  <div class="phero__num">PAGE 03 / 05</div>
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Timing & schedule</p>
+    <div class="phero__row mt-s">
+      <h1 class="h-xxl" data-lines><span class="line-mask"><span>Be early.</span></span><span class="line-mask"><span>He won’t be,</span></span><span class="line-mask"><span style="color:var(--orange)">but be early.</span></span></h1>
+      <div data-reveal data-delay=".2">
+        <p class="lede">Arrival times at every station for the 19-hour goal and the 24-hour survival plan. Built from the real route’s distance and climbing, with slowing for fatigue and the dark. Drag the slider for anything in between.</p>
+        <div class="mt-m">
+          <div class="toggle" id="planToggle"><button data-h="19" class="on">19 h · Goal</button><button data-h="24">24 h · Survival</button></div>
+          <div class="slider"><span>17h</span><input type="range" id="planSlider" min="17" max="26" step="0.5" value="19"><span>26h</span><b id="planVal" style="min-width:44px">19h</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:20px 0 60px">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:0">
+      <div><p class="eyebrow">The whole day</p><h2 class="h-m mt-s">Sat 04:00 → Sun 06:00. Orange dots are you.</h2></div>
+      <p class="lede">Shading is night: sunrise 05:32, sunset 19:46. Red lines are cut-offs. If a dot gets near a red line, start being nice to him.</p>
+    </div>
+    <div class="daybar" id="daybar"></div>
+    <div class="daybar__hours" id="dayhours"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="steps">
+      <div class="steps__sticky">
+        <div class="steps__photo" id="stepPhotos"></div>
+        <div class="steps__clock"><small id="clockLbl">Start · Gardens Rugby Club</small><span id="clockVal">Sat 04:00</span></div>
+        <p class="small mt-s" id="clockSub">Gun goes. Barney goes too fast.</p>
+      </div>
+      <ol class="steps__list" id="steps"></ol>
+    </div>
+  </div>
+</section>
+
+<section class="dark u-section">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h-l" data-lines><span class="line-mask"><span>Crew logistics</span></span></h2>
+      <p class="lede">Rough Saturday drive times between crew stations, and when to leave so you get there 30 minutes before him. Josh owns this table.</p>
+    </div>
+    <div class="tablewrap"><table class="ftable" id="driveTable" style="color:#F2F3EE"></table></div>
+    <p class="note" style="color:rgba(242,243,238,.5)">Drive times are guesses based on normal Saturday traffic, not a promise. Use live tracking on race day (link in the footer) and leave earlier if he’s moving faster than the plan, which early on he will be.</p>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="cta__bg" data-parallax style="background-image:url(assets/img/p080.jpg)"></div>
+  <div class="wrap">
+    <p class="eyebrow" style="color:rgba(255,255,255,.7)">Next · the important one</p>
+    <h2 class="h-xl" data-lines><span class="line-mask"><span>What to hand him</span></span><span class="line-mask"><span>when he gets there.</span></span></h2>
+    <div class="cta__links"><a class="btn btn--o" href="aid-stations.html">Aid Stations <span class="arr">→</span></a></div>
+  </div>
+</section>
+
+<footer class="foot" id="foot"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="assets/terrain.js"></script>
+<script src="assets/js/model.js?v=6"></script>
+<script src="assets/js/site.js?v=6"></script>
+<script src="assets/js/footer.js?v=6"></script>
+<script src="assets/js/pages.js?v=6"></script>
+</body>
+</html>

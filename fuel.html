@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fuelling · Barney’s UTCT 100</title>
+<link rel="icon" href="assets/barney.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css?v=6">
+</head>
+<body data-page="fuel">
+
+<section class="phero">
+  <svg class="topo" data-topo="560,500,300,260" data-draw></svg>
+  <div class="vgrid"><i style="left:33.3%"></i><i style="left:66.6%"></i></div>
+  <div class="phero__num">PAGE 05 / 05</div>
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Fuelling · Mikey L’s department</p>
+    <div class="phero__row mt-s">
+      <h1 class="h-xxl" data-lines><span class="line-mask"><span>He sweats like</span></span><span class="line-mask"><span>it’s a hobby.</span></span><span class="line-mask"><span style="color:var(--orange)">Feed him.</span></span></h1>
+      <p class="lede" data-reveal data-delay=".2">73 kg. Normally drinks 2 litres on a 15–20 km run, which tells you everything about his sweat. Salt and fluid will end his race before his legs do, so this page is mostly about stopping that.</p>
+    </div>
+  </div>
+</section>
+
+<section class="dark u-section">
+  <div class="vgrid"><i style="left:25%"></i><i style="left:50%"></i><i style="left:75%"></i></div>
+  <div class="wrap">
+    <p class="eyebrow">Every hour, for about 19 hours</p>
+    <h2 class="h-l mt-s" style="max-width:20ch" data-lines><span class="line-mask"><span>The four numbers.</span></span></h2>
+    <div class="targets mt-l">
+      <div data-reveal><b data-count="75">0<small>g</small></b><h4>Carbs per hour</h4><p>About 1 g per kg per hour. 70–90 g is the window. Under 60 and he bonks around Constantia.</p></div>
+      <div data-reveal data-delay=".08"><b data-count="750">0<small>ml</small></b><h4>Fluid per hour</h4><p>600–900 ml depending on heat. More on the exposed coastal bits, less at night.</p></div>
+      <div data-reveal data-delay=".16"><b data-count="900">0<small>mg</small></b><h4>Sodium per hour</h4><p>Heavy sweater, so 800–1,000 mg. If his cap has white salt crust on it, push to the top end.</p></div>
+      <div data-reveal data-delay=".24"><b data-count="250">0<small>mg</small></b><h4>Caffeine, total</h4><p>About 3–4 mg/kg, all of it from Hout Bay onwards. The chocolate-coffee gels do the work.</p></div>
+    </div>
+    <p class="note" style="color:rgba(242,243,238,.5)">General endurance guidelines for his bodyweight, not medical advice. Nothing new on race day. If it hasn’t been in his stomach on a long run, it doesn’t go in on Saturday.</p>
+  </div>
+</section>
+
+<section class="u-section">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h-l" data-lines><span class="line-mask"><span>The arsenal</span></span></h2>
+      <p class="lede" data-reveal>The Näak stuff he already uses, plus what I’d add. Gel numbers are confirmed. Waffle and bar numbers are estimates until someone reads the packet out loud to me.</p>
+    </div>
+    <div class="products" id="products"></div>
+  </div>
+</section>
+
+<section class="u-section" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2 class="h-l" data-lines><span class="line-mask"><span>Station by station</span></span></h2>
+        <div class="toggle mt-m" id="fuelToggle"><button data-h="19" class="on">19 h plan</button><button data-h="24">24 h plan</button></div>
+      </div>
+      <p class="lede" data-reveal>What to hand him at each crew station to get him to the next one. The simple version: <b>one flask of mix every hour, one gel or solid every hour, one salt cap every 40 minutes</b>. Real food at the table is a bonus on top.</p>
+    </div>
+    <div class="tablewrap"><table class="ftable" id="fuelTable"></table></div>
+  </div>
+</section>
+
+<section class="u-section" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h-l" data-lines><span class="line-mask"><span>Caffeine strategy</span></span></h2>
+      <p class="lede" data-reveal>No caffeine in the morning. He doesn’t need it on Platteklip and he’ll need it a lot more at 9pm in Newlands Forest. The chocolate-coffee gels start at Hout Bay, then Coke at Alphen and Newlands.</p>
+    </div>
+    <div class="caff" data-reveal><svg id="caffChart" viewBox="0 0 1000 140" preserveAspectRatio="none"></svg></div>
+    <div class="daybar__hours"><span>04:00</span><span>08:00</span><span>12:00</span><span>16:00</span><span>20:00</span><span>23:00</span></div>
+  </div>
+</section>
+
+<section class="u-section" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h-l" data-lines><span class="line-mask"><span>Mikey L’s shopping list</span></span></h2>
+      <p class="lede" data-reveal>Totals for the 24-hour plan plus 30% spare, because things get dropped, stolen by other crews, or eaten by Mikey H.</p>
+    </div>
+    <div class="fuelpack" id="shopping" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px"></div>
+  </div>
+</section>
+
+<section class="u-section" style="padding-top:0">
+  <div class="wrap">
+    <h2 class="h-l" data-lines><span class="line-mask"><span>When it goes wrong</span></span></h2>
+    <div class="warn mt-l">
+      <div data-reveal><em>Signs</em><b>Quiet, grumpy, slow</b><p>He’s bonking. Give him a gel immediately, plus Coke if you’ve got it. Don’t ask him if he wants it. Ten minutes later he’ll be a person again.</p></div>
+      <div data-reveal data-delay=".08"><em>Signs</em><b>Sloshy stomach, nausea</b><p>Too much fluid without salt, or he’s overheating. Pause the drinking, give him salt, ginger, sips of Coke, and walk him out of the station. Don’t force food.</p></div>
+      <div data-reveal data-delay=".16"><em>Signs</em><b>Not peeing, or dark pee</b><p>He’s behind on fluid and salt. One extra flask and two salt caps over the next hour.</p></div>
+      <div data-reveal><em>Signs</em><b>Cramping</b><p>Usually salt plus tired muscles. Salt cap, pickle juice if you’ve got some, and walk the next climb.</p></div>
+      <div data-reveal data-delay=".08"><em>Signs</em><b>Puffy hands, confused</b><p>Possibly too much water and not enough salt. That’s a medic conversation, not a crew one. Find race medical.</p></div>
+      <div data-reveal data-delay=".16"><em>Signs</em><b>“I’m fine”</b><p>Classic symptom. Ignore it and keep following the plan.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="cta__bg" data-parallax style="background-image:url(assets/img/p072.jpg)"></div>
+  <div class="wrap">
+    <p class="eyebrow" style="color:rgba(255,255,255,.7)">The finish</p>
+    <h2 class="h-xl" data-lines><span class="line-mask"><span>After that, he can</span></span><span class="line-mask"><span>eat whatever he wants.</span></span></h2>
+    <div class="cta__links"><a class="btn btn--o" href="index.html">Back to the top <span class="arr">→</span></a><a class="btn btn--ghost" href="aid-stations.html">Aid Stations <span class="arr">→</span></a></div>
+  </div>
+</section>
+
+<footer class="foot" id="foot"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="assets/terrain.js"></script>
+<script src="assets/js/model.js?v=6"></script>
+<script src="assets/js/site.js?v=6"></script>
+<script src="assets/js/footer.js?v=6"></script>
+<script src="assets/js/pages.js?v=6"></script>
+</body>
+</html>
