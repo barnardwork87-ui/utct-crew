@@ -74,8 +74,8 @@
         bio: 'An actual brewer, so the only crew member with a professional qualification relevant to this event. His department opens at the finish line and not one metre earlier, no matter how nicely Barney asks at Newlands.',
         jobs: ['Brings the beer. Brewed it, probably.', 'Keeps it cold for anywhere between 19 and 26 hours', 'Hands Barney the first one at the finish, and not before'] },
       { slug: 'justin', name: 'Justin', role: 'Arigachi my bruhtjie', bg: '#C9B8F0', auth: 66,
-        bio: 'Brings the steeze. His position on the whole event is “why climb the mountain when you can go throw it”, which nobody has fully understood but everybody agrees with. It’s all about mindset. Justin has never once looked stressed and isn’t going to start on Saturday.',
-        jobs: ['Steeze levels at every crew station: maximum', 'Mindset reframes on demand (“you’re not climbing Platteklip, you’re throwing it”)', 'Makes the 15 minutes at Hout Bay look like a photoshoot'] }
+        bio: 'Brings the steeze. His position on the whole event is “why climb the mountain when you can go through it”, which is not how mountains work but everybody agrees with. It’s all about mindset. Justin has never once looked stressed and isn’t going to start on Saturday.',
+        jobs: ['Steeze levels at every crew station: maximum', 'Mindset reframes on demand (“you’re not climbing Platteklip, you’re going through it”)', 'Makes the 15 minutes at Hout Bay look like a photoshoot'] }
     ];
     $('#crewGrid').innerHTML = CREW.map((c, i) => `
       <article class="crewcard" data-reveal data-delay="${(i % 4) * 0.08}">
